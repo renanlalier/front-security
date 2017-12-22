@@ -1,0 +1,22 @@
+<div layout="row">
+    <h1 class="title-message" flex-offset="5" flex="90">{{vm.message}}</h1>
+    <div flex></div>
+</div>
+
+<div class="content-frame" md-whiteframe="1" flex-offset="5" flex="90" layout="column">
+
+    <div class="input-pwd" flex-offset="5">
+        <md-input-container>
+            <label>Senha</label>
+            <input md-no-asterisk type="password" required name="password" ng-keyup="vm.validate()" ng-model="vm.password">
+            <div ng-messages="projectForm.password.$error">
+                <div ng-message="required">Campo senha obrigatório</div>
+            </div>
+            <md-chips>
+                <md-chip class="txt-score txt-score-percent">{{vm.result.score}} %</md-chip>
+                <md-chip class="txt-score txt-score-complexity">{{vm.result.complexity}}</md-chip>
+            </md-chips>
+        </md-input-container>
+    </div>
+
+</div>

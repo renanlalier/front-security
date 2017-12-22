@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <title>Segurança de Senhas</title>
+
+  <!-- Angular Material CSS  -->
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css" type="text/css">
+
+</head>
+
+<body>
+
+  <div ng-view></div>
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+  <script src="node_modules/angular-material/angular-material.min.js"></script>
+  <script src="node_modules/angular-css/angular-css.min.js"></script>
+
+  <script src="app/modules/app.module.js"></script>
+  <script src="app/configuration/app.config.route.js"></script>
+  <script src="app/security/security.controller.js"></script>
+  <script src="app/services/validation.service.js"></script>
+</body>
+
+</html>
